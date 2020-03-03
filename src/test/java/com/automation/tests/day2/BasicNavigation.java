@@ -16,6 +16,19 @@ public class BasicNavigation {
         //ChromeDriver extends RemoteWebDriver --> implements WebDriver
         driver.get("http://google.com");//to open a website
         Thread.sleep(3000);//for demo, wait 3 seconds
+        //method that return page title
+        //you can also see it as tab name, in the browser
+        String title = driver.getTitle(); //returns <title>Some title</title> text
+        String expectedTitle = "Google";
+
+        System.out.println("Title is..." + title);
+
+        if (expectedTitle.equals(title)){
+            System.out.println("TEST PASSED!");
+    }else {
+            System.out.println("TEST FAILED!");
+        }
+        //must be at the end
         driver.close();//to cloe browser
     }
 }
