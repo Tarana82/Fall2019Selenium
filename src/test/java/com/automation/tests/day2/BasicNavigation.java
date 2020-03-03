@@ -41,13 +41,26 @@ public class BasicNavigation {
         }
         //comeback to google
         driver.navigate().back();
-
+        //checking if page title is equals to Google
         verifyEquals(driver.getTitle(), "Google");
+        //move forward in the browser history
+        //again,going to amazon
+        driver.navigate().forward();
+        System.out.println("Title: "+driver.getTitle());
+        //driver.getTitle() - returns page title of the page that is currently opened
+
 
         //must be at the end
-        driver.close();//to cloe browser
+        driver.close();//to close browser
         //browser cannot close itself
     }
+
+    /**
+     * Check if to strings are same.If print Test Passed!message
+     * *Otherwise,print Test Failed message
+     * @param arg1
+     * @param arg2
+     */
 
     public static void verifyEquals(String arg1, String arg2){
         if(arg1.equals(arg2)){
