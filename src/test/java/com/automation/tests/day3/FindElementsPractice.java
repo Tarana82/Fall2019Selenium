@@ -14,6 +14,7 @@ public class FindElementsPractice {
         driver.get("http://practice.cybertekschool.com/sign_up");
 
         driver.quit();//to close everything
+        driver.close();
     }
 
 }
