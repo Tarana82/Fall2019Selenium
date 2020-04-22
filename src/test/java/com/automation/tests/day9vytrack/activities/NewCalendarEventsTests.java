@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.List;
 
-public class NewCalendarEvents extends AbstractTestBase {
+public class NewCalendarEventsTests extends AbstractTestBase {
     LoginPage loginPage = new LoginPage();
     CalendarEventsPage calendarEventsPage = new CalendarEventsPage();
 
